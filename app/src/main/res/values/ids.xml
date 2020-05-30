@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="camera_view_renderer" type="id" />
+    <item name="pip_view_renderer" type="id" />
+    <item name="start_streaming_button" type="id" />
+</resources>

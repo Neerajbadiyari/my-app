@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:id="@+id/scrolview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imgtop"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/screen_top"/>
+
+            <ImageView
+                android:id="@+id/logoimg"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/white_logo"/>
+
+            <TextView
+                android:id="@+id/welcometxt"
+                android:layout_below="@+id/logoimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:text="Meet Our Coach"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/iv_student_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_below="@+id/welcometxt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/circular_bordershape"
+                android:src="@drawable/ic_profile_coach" />
+
+            <TextView
+                android:id="@+id/tv_coach_name"
+                android:layout_below="@+id/iv_student_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="Anuj"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/betsmantxt"
+                android:layout_below="@+id/tv_coach_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="U-10,U-12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:id="@+id/lidetais"
+                android:layout_below="@+id/betsmantxt"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:text="Speciaalization in cricket"
+                    android:textColor="#3272C8"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+               <!-- <TextView
+                    android:id="@+id/coachtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textAlignment="viewStart"
+                    android:text=""
+                    android:textColor="#3272C8"
+                    android:textStyle="bold" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lidetais1"
+                android:layout_below="@+id/lidetais"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:text="Professional fitness trainer"
+                    android:gravity="center"
+                    android:textColor="#3272C8"
+                    android:textStyle="bold" />
+
+                <!--<TextView
+                    android:id="@+id/agetxt"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textSize="16sp"
+                    android:text=""
+                    android:textColor="#3272C8"
+                    android:textStyle="bold" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lidetais2"
+                android:layout_below="@+id/lidetais1"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:text="Nuturition and Diet planer"
+                    android:textColor="#3272C8"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+               <!-- <TextView
+                    android:id="@+id/favcri"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textSize="16sp"
+                    android:text=""
+                    android:textColor="#3272C8"
+                    android:textStyle="bold" />
+-->
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:id="@+id/lidetais3"
+                android:layout_below="@+id/lidetais2"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:text="LOCATION"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />-->
+
+               <!-- <TextView
+                    android:id="@+id/loctext"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textSize="16sp"
+                    android:text=""
+                    android:textColor="#3272C8"
+                    android:textStyle="bold" />-->
+
+          <!--  </LinearLayout>-->
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cont_coach"
+                android:layout_below="@+id/lidetais2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/bg_gray"
+                android:gravity="center"
+                android:text="CONTINUE"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

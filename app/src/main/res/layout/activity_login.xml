@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.pcl.procastlive.LoginActivity">
+
+  <ScrollView
+      android:id="@+id/scrolview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <ImageView
+          android:id="@+id/imgtophder"
+          android:layout_width="wrap_content"
+          android:layout_height="300dp"
+          android:scaleType="fitXY"
+          android:layout_alignParentTop="true"
+          android:src="@drawable/top_header"/>
+
+      <TextView
+          android:id="@+id/signintext"
+          android:layout_below="@+id/imgtophder"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="5dp"
+          android:layout_marginEnd="5dp"
+          android:textAlignment="center"
+          android:textSize="25sp"
+          android:textStyle="bold"
+          android:text="Sign In"
+          android:textColor="@color/black"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/turntxt"
+          android:layout_below="@+id/signintext"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="5dp"
+          android:layout_marginTop="5dp"
+          android:layout_marginEnd="5dp"
+          android:textAlignment="center"
+          android:textSize="16sp"
+          android:text="Turn your phone into a"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/turntxt1"
+          android:layout_below="@+id/turntxt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="5dp"
+          android:layout_marginEnd="5dp"
+          android:textAlignment="center"
+          android:textSize="16sp"
+          android:text="seamless content platform!"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <EditText
+          android:id="@+id/phone_number_field"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/turntxt1"
+          android:layout_centerInParent="true"
+          android:layout_marginStart="80dp"
+          android:layout_marginTop="33dp"
+          android:layout_marginEnd="40dp"
+          android:backgroundTint="#B0B0B0"
+          android:drawableStart="@drawable/phone_icon1"
+          android:drawablePadding="15dp"
+          android:maxLines="1"
+          android:inputType="number"
+          android:maxLength="15"
+          android:ems="20"
+          android:hint="Enter Mobile Number"
+          android:textSize="20sp"/>
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/btn_submit"
+          android:layout_below="@+id/phone_number_field"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_gravity="center"
+          android:layout_marginLeft="100dp"
+          android:layout_marginTop="50dp"
+          android:layout_marginRight="100dp"
+          android:background="@drawable/bg_gray"
+          android:gravity="center"
+          android:text="SUBMIT"
+          android:textColor="@color/colorWhite"
+          android:textSize="18sp" />
+
+      <TextView
+          android:id="@+id/privcy1"
+          android:layout_below="@+id/btn_submit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="5dp"
+          android:layout_marginTop="50dp"
+          android:textAlignment="center"
+          android:textColor="@color/black"
+          android:textSize="14sp"
+          android:text="By submitting, you agree to our"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <LinearLayout
+        android:id="@+id/liprvcy"
+          android:layout_below="@+id/privcy1"
+          android:layout_marginStart="5dp"
+          android:layout_marginEnd="5dp"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/termstxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:text="Terms"
+            android:textColor="#3272C8"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/termstxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginStart="5dp"
+            android:textSize="14sp"
+            android:text="and"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/termstx2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginStart="5dp"
+            android:textSize="14sp"
+            android:text="Privacy Policy"
+            android:textColor="#3272C8"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+      </LinearLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="16dp"
+          android:gravity="bottom">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+      </RelativeLayout>
+
+    </RelativeLayout>
+  </ScrollView>
+
+
+
+
+
+</RelativeLayout>

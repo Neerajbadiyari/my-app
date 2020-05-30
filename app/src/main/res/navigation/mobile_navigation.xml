@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.pcl.procastlive.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_matches"
+        android:name="com.pcl.procastlive.ui.matches.MatchesFragment"
+
+        tools:layout="@layout/fragment_matches" />
+
+    <fragment
+        android:id="@+id/navigation_videos"
+        android:name="com.pcl.procastlive.ui.videos.VideosFragment"
+
+        tools:layout="@layout/fragment_vedios" />
+
+    <fragment
+        android:id="@+id/navigation_rankings"
+        android:name="com.pcl.procastlive.ui.rankings.RankingsFragment"
+
+        tools:layout="@layout/fragment_rankings" />
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/navigation_notifi"-->
+    <!--        android:name="com.pcl.pclapp.ui.Notifications.NotificationsFragment"-->
+    <!--        tools:layout="@layout/fragment_notifications" />-->
+
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="com.pcl.procastlive.ui.more.MoreFragment"
+
+        tools:layout="@layout/fragment_more" />
+</navigation>
